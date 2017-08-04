@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Calculator practice</h1>
+<section>
+    <h2>Exercise</h2>
+
+    <ol>
+        <li>Build a calculator application similar to this: <a href="https://codepen.io/FreeCodeCamp/full/rLJZrA/">https://codepen.io/FreeCodeCamp/full/rLJZrA/</a>
+        </li>
+        <li>Create a new angular application</li>
+        <li>Create a model for Operation. With the following properties:
+            <ul>
+                <li>firstOperand: number</li>
+                <li>secondOperand: number</li>
+                <li>operator: enum or string</li>
+            </ul>
+        </li>
+        <li>Create a model for CalculatorHistory. With the following properties:
+            <ul>
+                <li>operation: Operation</li>
+                <li>result: number</li>
+                <li>date: Date (default: new Date())</li>
+            </ul>
+        </li>
+        <li>Create a calculatorForm component. With the following instructions
+            <ul>
+                <li>It must contain an input for the firstOperand</li>
+                <li>It must contain a select for the operators.</li>
+                <li>Generate the option for the operators from an Array. The operations are the following:
+                    <ul>
+                        <li>Add</li>
+                        <li>Substract</li>
+                        <li>Multiple</li>
+                        <li>Divide</li>
+                        <li>Modulo</li>
+                    </ul>
+                </li>
+                <li>It must contain an input for the secondOperand</li>
+                <li>It must contain a calculate button.</li>
+                <li>The component must have an event which broadcasts an Operation object, when the form is submitted.
+                </li>
+            </ul>
+        </li>
+        <li>Create a calculatorResult component. With the following instructions
+            <ul>
+                <li>It must have an input property for an Operation.</li>
+                <li>It must have a calculate method, which works with an Operation typed object.</li>
+                <li>It must have a delay method, which calls a setTimeout a few times before calls the calculate
+                    method.
+                </li>
+                <li>It must show a loader while the result is calculating</li>
+                <li>It must show the result, when the calculation is done</li>
+            </ul>
+        </li>
+        <li>Create a calculateHistory component. With the following instructions:
+            <ul>
+                <li>It has an input property which accepts an Array of CalculatorHistory</li>
+                <li>It must show a table for history elements</li>
+            </ul>
+        </li>
+        <li>In the main component connect the components.</li>
+    </ol>
+    <button id="btnHint">Show hints</button>
+    <button id="btnSolution">Show solution</button>
+</section>
+<section id="hints" class="hidden">
+    <h2>Hints</h2>
+</section>
+<section id="solution" class="hidden">
+    <h2>Solution</h2>
+    <ul>
+        <li><a href="https://github.com/NAdamo/superCalculator.git"> Code</a></li>
+        <li><a href="https://nadamo.github.io/superCalculator/"> Working example</a></li>
+    </ul>
+</section>
+<a href="index.html">Back</a>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
